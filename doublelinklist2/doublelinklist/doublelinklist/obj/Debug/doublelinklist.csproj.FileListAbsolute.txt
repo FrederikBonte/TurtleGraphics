@@ -1,0 +1,21 @@
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\bin\Debug\doublelinklist.exe.config
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\bin\Debug\doublelinklist.exe
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\bin\Debug\doublelinklist.pdb
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.csprojResolveAssemblyReference.cache
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.Form1.resources
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.Properties.Resources.resources
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.csproj.GenerateResource.Cache
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.exe
+\\STOR01\gebruikersdata\ASchuit\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.pdb
+H:\Documents\School\PRG\doublelinklist\doublelinklist\bin\Debug\doublelinklist.exe.config
+H:\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.exe
+H:\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.pdb
+H:\Documents\School\PRG\doublelinklist\doublelinklist\bin\Debug\doublelinklist.exe
+H:\Documents\School\PRG\doublelinklist\doublelinklist\bin\Debug\doublelinklist.pdb
+H:\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.csprojResolveAssemblyReference.cache
+H:\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.Form1.resources
+H:\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.Properties.Resources.resources
+H:\Documents\School\PRG\doublelinklist\doublelinklist\obj\Debug\doublelinklist.csproj.GenerateResource.Cache
+K:\SCHOOLJAAR 2018-2019\PRO\6AA1\schuit-aidan\doublelinklist2\doublelinklist\doublelinklist\bin\Debug\doublelinklist.exe.config
+K:\SCHOOLJAAR 2018-2019\PRO\6AA1\schuit-aidan\doublelinklist2\doublelinklist\doublelinklist\obj\Debug\doublelinklist.exe
+K:\SCHOOLJAAR 2018-2019\PRO\6AA1\schuit-aidan\doublelinklist2\doublelinklist\doublelinklist\obj\Debug\doublelinklist.pdb

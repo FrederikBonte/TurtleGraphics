@@ -1,0 +1,10 @@
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\bin\Debug\AltFoodSurvival.exe.config
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\bin\Debug\AltFoodSurvival.exe
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\bin\Debug\AltFoodSurvival.pdb
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\obj\Debug\AltFoodSurvival.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\obj\Debug\AltFoodSurvival.Form1.resources
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\obj\Debug\AltFoodSurvival.Properties.Resources.resources
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\obj\Debug\AltFoodSurvival.csproj.GenerateResource.cache
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\obj\Debug\AltFoodSurvival.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\obj\Debug\AltFoodSurvival.exe
+C:\Users\nucle\source\repos\AltFoodSurvival\AltFoodSurvival\obj\Debug\AltFoodSurvival.pdb

@@ -1,0 +1,7 @@
+C:\Users\nucle\source\repos\Tafels\Tafels\bin\Debug\Tafels.exe.config
+C:\Users\nucle\source\repos\Tafels\Tafels\bin\Debug\Tafels.exe
+C:\Users\nucle\source\repos\Tafels\Tafels\bin\Debug\Tafels.pdb
+C:\Users\nucle\source\repos\Tafels\Tafels\obj\Debug\Tafels.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\Tafels\Tafels\obj\Debug\Tafels.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\Tafels\Tafels\obj\Debug\Tafels.exe
+C:\Users\nucle\source\repos\Tafels\Tafels\obj\Debug\Tafels.pdb

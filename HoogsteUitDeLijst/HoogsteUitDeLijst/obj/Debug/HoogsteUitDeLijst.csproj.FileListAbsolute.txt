@@ -1,0 +1,10 @@
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\bin\Debug\HoogsteUitDeLijst.exe.config
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\bin\Debug\HoogsteUitDeLijst.exe
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\bin\Debug\HoogsteUitDeLijst.pdb
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\obj\Debug\HoogsteUitDeLijst.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\obj\Debug\HoogsteUitDeLijst.Form1.resources
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\obj\Debug\HoogsteUitDeLijst.Properties.Resources.resources
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\obj\Debug\HoogsteUitDeLijst.csproj.GenerateResource.cache
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\obj\Debug\HoogsteUitDeLijst.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\obj\Debug\HoogsteUitDeLijst.exe
+C:\Users\nucle\source\repos\HoogsteUitDeLijst\HoogsteUitDeLijst\obj\Debug\HoogsteUitDeLijst.pdb

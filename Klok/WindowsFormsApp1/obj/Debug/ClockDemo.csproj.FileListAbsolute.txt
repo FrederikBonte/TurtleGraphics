@@ -1,0 +1,52 @@
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClockDemo.exe.config
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClockDemo.exe
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClockDemo.pdb
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Form1.resources
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.GenerateResource.cache
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.exe
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.pdb
+C:\Users\nucle\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Properties.Resources.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClockDemo.exe.config
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClockDemo.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClockDemo.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.csprojAssemblyReference.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Form1.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Properties.Resources.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.GenerateResource.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.pdb
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClockDemo.exe.config
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.exe
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ClockDemo.pdb
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.exe.config
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.exe
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.pdb
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.exe
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.pdb
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csprojResolveAssemblyReference.cache
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Form1.resources
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Properties.Resources.resources
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.GenerateResource.Cache
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.exe.config
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.exe
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.pdb
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csprojAssemblyReference.cache
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Form1.resources
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Properties.Resources.resources
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.GenerateResource.cache
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.exe
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.exe.config
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Debug\ClockDemo.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csprojAssemblyReference.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Form1.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.Properties.Resources.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.GenerateResource.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.pdb
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.ClockControl.resources

@@ -1,0 +1,13 @@
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\bin\Debug\CLispGUI.exe.config
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\bin\Debug\CLispGUI.exe
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\bin\Debug\CLispGUI.pdb
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\bin\Debug\CSLisp.exe
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\bin\Debug\CSLisp.pdb
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\bin\Debug\CSLisp.exe.config
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\obj\Debug\CLispGUI.csprojAssemblyReference.cache
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\obj\Debug\CLispGUI.Form1.resources
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\obj\Debug\CLispGUI.Properties.Resources.resources
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\obj\Debug\CLispGUI.csproj.GenerateResource.cache
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\obj\Debug\CLispGUI.csproj.CopyComplete
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\obj\Debug\CLispGUI.exe
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\CSLisp\CLispGUI\obj\Debug\CLispGUI.pdb

@@ -1,0 +1,17 @@
+H:\sources\MyChess\MyChess\bin\Debug\MyChess.exe.config
+H:\sources\MyChess\MyChess\bin\Debug\MyChess.exe
+H:\sources\MyChess\MyChess\bin\Debug\MyChess.pdb
+H:\sources\MyChess\MyChess\obj\Debug\MyChess.csprojResolveAssemblyReference.cache
+H:\sources\MyChess\MyChess\obj\Debug\MyChess.Properties.Resources.resources
+H:\sources\MyChess\MyChess\obj\Debug\MyChess.csproj.GenerateResource.Cache
+H:\sources\MyChess\MyChess\obj\Debug\MyChess.exe
+H:\sources\MyChess\MyChess\obj\Debug\MyChess.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\bin\Debug\MyChess.exe.config
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\bin\Debug\MyChess.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\bin\Debug\MyChess.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\obj\Debug\MyChess.csprojAssemblyReference.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\obj\Debug\MyChess.Properties.Resources.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\obj\Debug\MyChess.csproj.GenerateResource.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\obj\Debug\MyChess.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\obj\Debug\MyChess.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\MyChess\MyChess\obj\Debug\MyChess.pdb

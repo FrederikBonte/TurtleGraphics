@@ -1,0 +1,10 @@
+C:\Users\nucle\source\repos\Colatz\Colatz\bin\Debug\Colatz.exe.config
+C:\Users\nucle\source\repos\Colatz\Colatz\bin\Debug\Colatz.exe
+C:\Users\nucle\source\repos\Colatz\Colatz\bin\Debug\Colatz.pdb
+C:\Users\nucle\source\repos\Colatz\Colatz\obj\Debug\Colatz.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\Colatz\Colatz\obj\Debug\Colatz.Form1.resources
+C:\Users\nucle\source\repos\Colatz\Colatz\obj\Debug\Colatz.Properties.Resources.resources
+C:\Users\nucle\source\repos\Colatz\Colatz\obj\Debug\Colatz.csproj.GenerateResource.cache
+C:\Users\nucle\source\repos\Colatz\Colatz\obj\Debug\Colatz.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\Colatz\Colatz\obj\Debug\Colatz.exe
+C:\Users\nucle\source\repos\Colatz\Colatz\obj\Debug\Colatz.pdb

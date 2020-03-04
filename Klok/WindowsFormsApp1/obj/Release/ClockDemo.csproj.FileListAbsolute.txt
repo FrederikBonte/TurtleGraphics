@@ -1,0 +1,9 @@
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Release\ClockDemo.exe.config
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Release\ClockDemo.exe
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\bin\Release\ClockDemo.pdb
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Release\ROC.FBE02.ClockDemo.Form1.resources
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Release\ROC.FBE02.ClockDemo.Properties.Resources.resources
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Release\ClockDemo.csproj.GenerateResource.Cache
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Release\ClockDemo.exe
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Release\ClockDemo.pdb
+C:\Users\fbonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Release\ClockDemo.csprojResolveAssemblyReference.cache

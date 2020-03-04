@@ -1,0 +1,14 @@
+C:\Users\nucle\source\repos\SpeechDemo1\SpeechDemo1\bin\Debug\SpeechDemo1.exe.config
+C:\Users\nucle\source\repos\SpeechDemo1\SpeechDemo1\bin\Debug\SpeechDemo1.exe
+C:\Users\nucle\source\repos\SpeechDemo1\SpeechDemo1\bin\Debug\SpeechDemo1.pdb
+C:\Users\nucle\source\repos\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.exe
+C:\Users\nucle\source\repos\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SpeechDemo1\SpeechDemo1\bin\Debug\SpeechDemo1.exe.config
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SpeechDemo1\SpeechDemo1\bin\Debug\SpeechDemo1.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SpeechDemo1\SpeechDemo1\bin\Debug\SpeechDemo1.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.csprojAssemblyReference.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SpeechDemo1\SpeechDemo1\obj\Debug\SpeechDemo1.pdb
