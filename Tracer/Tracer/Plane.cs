@@ -56,5 +56,11 @@ namespace Tracer
             double dot = Point.dot(point, this.normal);
             return dot + d;
         }
+
+        public override double distanceSquared(Point point)
+        {
+            double d = distance(point);
+            return d * d;
+        }
     }
 }

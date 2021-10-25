@@ -29,9 +29,15 @@ namespace Tracer
             return mandelbulbDistance(point);
         }
 
+        public override double distanceSquared(Point point)
+        {
+            double d = mandelbulbDistance(point);
+            return d*d;
+        }
+
         public double mandelbulbDistance(Point point)
         {
-            Point z = point;
+            Point z = Point.scale(point, this.scale);
             double dr = 20;
             double r = 0;
 

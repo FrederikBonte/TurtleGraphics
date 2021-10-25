@@ -1,0 +1,10 @@
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\bin\Debug\Flappytrial.exe.config
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\bin\Debug\Flappytrial.exe
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\bin\Debug\Flappytrial.pdb
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\obj\Debug\Flappytrial.Form1.resources
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\obj\Debug\Flappytrial.Properties.Resources.resources
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\obj\Debug\Flappytrial.csproj.GenerateResource.cache
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\obj\Debug\Flappytrial.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\obj\Debug\Flappytrial.exe
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\obj\Debug\Flappytrial.pdb
+C:\Users\Bonte\source\repos\Flappytrial\Flappytrial\obj\Debug\Flappytrial.csprojAssemblyReference.cache

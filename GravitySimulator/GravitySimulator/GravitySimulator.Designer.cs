@@ -46,7 +46,7 @@
             this.trkThrust = new System.Windows.Forms.TrackBar();
             this.btnReset = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.landerGraphics1 = new GravitySimulator.LanderGraphics();
+            this.landerGraphics1 = new LanderGraphics();
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trkThrust)).BeginInit();

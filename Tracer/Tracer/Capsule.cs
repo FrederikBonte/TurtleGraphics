@@ -24,6 +24,12 @@ namespace Tracer
             return Point.distance(point, c) - radius;
         }
 
+        public override double distanceSquared(Point point)
+        {
+            Point c = Line.getClosest(point, segment);
+            return Point.distanceSquared(point, c) - radius;
+        }
+
         public override Point getNormal(Point point)
         {
             Point c = Line.getClosest(point, segment);

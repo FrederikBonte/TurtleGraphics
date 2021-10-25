@@ -27,24 +27,36 @@ namespace SQLEditor
         {
             string myConnectionString = "SERVER="+txtHost.Text+";UID='"+txtUsername.Text+"';PASSWORD='"+txtPassword.Text+"';PORT="+txtPort.Text;
             MySqlConnection connection = new MySqlConnection(myConnectionString);
-            MySqlCommand command = connection.CreateCommand();
-            command.CommandText = "SHOW DATABASES;";
-            MySqlDataReader Reader;
-            connection.Open();
-            Reader = command.ExecuteReader();
-            object selected = cmbDatabase.SelectedItem;
-            cmbDatabase.Items.Clear();
-            while (Reader.Read())
+            try
             {
-                string row = "";
-                for (int i = 0; i < Reader.FieldCount; i++) {
-                    row += Reader.GetValue(i).ToString();
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = "SHOW DATABASES;";
+                MySqlDataReader Reader;
+                connection.Open();
+                Reader = command.ExecuteReader();
+                object selected = cmbDatabase.SelectedItem;
+                cmbDatabase.Items.Clear();
+                while (Reader.Read())
+                {
+                    string row = "";
+                    for (int i = 0; i < Reader.FieldCount; i++)
+                    {
+                        row += Reader.GetValue(i).ToString();
+                    }
+                    cmbDatabase.Items.Add(row);
                 }
-                cmbDatabase.Items.Add(row);
+                getMain().speak("Connection succeeded.", frmMain.SpeechVerbosity.VERBOSE);
+                getMain().speak(cmbDatabase.Items.Count + " databases were found.");
+                connection.Close();
             }
-            getMain().speak("Connection succeeded.", frmMain.SpeechVerbosity.VERBOSE);
-            getMain().speak(cmbDatabase.Items.Count + " databases were found.");
-            connection.Close();
+            catch (Exception ex)
+            {
+                getMain().speak("Failed to connect to the database, because : " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         private void Connection_Shown(object sender, EventArgs e)

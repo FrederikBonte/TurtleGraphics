@@ -1,0 +1,10 @@
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\bin\Debug\MBFExplorer.exe.config
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\bin\Debug\MBFExplorer.exe
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\bin\Debug\MBFExplorer.pdb
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.MandelbrotPainter.resources
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.Properties.Resources.resources
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.csproj.GenerateResource.cache
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.exe
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.pdb
+C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.Form1.resources

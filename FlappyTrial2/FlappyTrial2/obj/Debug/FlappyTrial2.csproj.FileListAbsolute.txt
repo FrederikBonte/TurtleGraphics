@@ -1,0 +1,11 @@
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\bin\Debug\FlappyTrial2.exe.config
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\bin\Debug\FlappyTrial2.exe
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\bin\Debug\FlappyTrial2.pdb
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.FlappyViewer.resources
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.Form1.resources
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.Properties.Resources.resources
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.csproj.GenerateResource.cache
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.exe
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.pdb
+C:\Users\Bonte\source\repos\FlappyTrial2\FlappyTrial2\obj\Debug\FlappyTrial2.csprojAssemblyReference.cache

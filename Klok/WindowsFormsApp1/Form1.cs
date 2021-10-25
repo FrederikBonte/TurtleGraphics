@@ -16,7 +16,8 @@ namespace ROC.FBE02.ClockDemo
     public partial class Form1 : Form
     {
         private readonly string[] ROMANS = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII" };
-        private readonly string[] NUMBERS = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
+//        private readonly string[] NUMBERS = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
+        private readonly string[] NUMBERS = { "3", "6", "9", "12" };
         private readonly int MARGIN = 20*2;
         private int pomodoro_from = 0, pomodoro_until = -1;
 

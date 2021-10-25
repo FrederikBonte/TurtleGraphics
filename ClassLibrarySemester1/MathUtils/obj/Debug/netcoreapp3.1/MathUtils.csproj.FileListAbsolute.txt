@@ -1,0 +1,8 @@
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\bin\Debug\netcoreapp3.1\MathUtils.deps.json
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\bin\Debug\netcoreapp3.1\MathUtils.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\bin\Debug\netcoreapp3.1\MathUtils.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\obj\Debug\netcoreapp3.1\MathUtils.AssemblyInfoInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\obj\Debug\netcoreapp3.1\MathUtils.AssemblyInfo.cs
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\obj\Debug\netcoreapp3.1\MathUtils.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\obj\Debug\netcoreapp3.1\MathUtils.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\MathUtils\obj\Debug\netcoreapp3.1\MathUtils.pdb

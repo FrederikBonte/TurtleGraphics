@@ -38,6 +38,8 @@ namespace AMazeing
 
         private int sizex, sizey;
         private Image dungeon = null;
+        // Blob is evil... Blob F*cks up the animation cycle...
+        // Don't trust blob!
         private CleverBlob blob = null;
         private Room[] rooms;
         private readonly List<Character> kara = new List<Character>();
@@ -72,6 +74,7 @@ namespace AMazeing
         private void prepareMaze()
         {
             Room room;
+            // Create a long list of "Rooms".
             this.rooms = new Room[sizex * sizey];
             if (this.rooms.Length==0)
             {
@@ -82,7 +85,10 @@ namespace AMazeing
                 for (int x = 0; x < sizex; x++)
                 {
                     room = new Room();
+                    // Add each room.
                     rooms[y * sizex + x] = room;
+                    // Create links between all Rooms.
+                    // Links are POSSIBLE connections but are still blocked here.
                     if (x > 0)
                     {
                         rooms[y * sizex + x - 1].link(Room.EAST, room);
@@ -94,7 +100,9 @@ namespace AMazeing
                     }
                 }
             }
+            // One room is the start...
             rooms[0].setState(Room.State.START);
+            // The other is the finish...
             rooms[rooms.Length - 1].setState(Room.State.FINISH);
         }
 
@@ -109,6 +117,7 @@ namespace AMazeing
             character.init(this);
         }
 
+        #region Please don't activate the Evil Blob!
         public void addBlob()
         {
             if (this.blob != null)
@@ -154,6 +163,7 @@ namespace AMazeing
                 this.blob.stop();
             }
         }
+        #endregion
 
         [Description("Width of in the maze in rooms."), Category("Data")]
         public int SizeX
@@ -206,6 +216,7 @@ namespace AMazeing
 
             if (treasure)
             {
+                // Place treasures in the maze.
                 int t = RND.Next(6) + 5 + RND.Next(6);
                 this.empty = false;
                 Room room = null;
@@ -354,18 +365,30 @@ namespace AMazeing
             return RND;
         }
 
+        /// <summary>
+        /// Draw the maze as stored in memory.
+        /// This is where the magic happens!!!
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Maze_Paint(object sender, PaintEventArgs e)
         {
             if (this.dungeon == null)
             {
+                // Recreate the dungeon image...
                 this.dungeon = new Bitmap(sizex*32+16, sizey*48+16);
                 Graphics dg = Graphics.FromImage(this.dungeon);
+                // Actually draw the maze.
                 this.renderDungeon(dg);
                 Console.WriteLine("rerender dungeon.");
             }
 
+            // Draw the dungeon image (background).
             e.Graphics.DrawImage(this.dungeon, 0, 0);
+            // Draw all the (remaining) treasures over the maze image.
             this.drawTreasures(e.Graphics);
+            // Show where the character is...
+            // Please also don't use multiple characters.
             foreach (Character k in this.kara)
             {
                 k.draw(e.Graphics);

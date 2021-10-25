@@ -32,17 +32,9 @@ namespace Tracer
         {
             InitializeComponent();
             this.ResizeRedraw = true;
-//            this.elements.Add(new Plane(new Point(0, -1, 0), new Point(0.001, -0.1, 0)));
-            this.elements.Add(new Sphere(new Point(0, -1000000002, 0), 1000000000));
-//            this.elements.Add(new Sphere(new Point(0, 0, 0),3));
-//            this.elements.Add(new Sphere(new Point(-2.5, 0, 2), 3));
-//            this.elements.Add(new Sphere(new Point(1.5, 1, 1.5), 2));
 
-            this.elements.Add(new Capsule(new Point(4, 2, -2), new Point(4.5, 0.5, -2.1), 1));
-
-//            this.elements.Add(new Mandelbulb(new Point(0, 0, 0)));
-
-            this.elements[0].Texture =
+            TracableElement plane = new Sphere(new Point(0, -1000000002, 0), 1000000000);
+            plane.Texture =
                 new YRotatedTexture(
                     new CheckerTexture(
                         SolidTexture.GRAY,
@@ -55,7 +47,16 @@ namespace Tracer
                     )
                 ),
                 37);
-            //this.elements[2].Texture = new XYZRotatedTexture(new GradientTexture(new SolidTexture(Color.DarkRed), SolidTexture.RED, GradientTexture.Mode.SINE, true, 0.079381), 90, 36, 127);
+            this.elements.Add(plane);
+
+
+            //            this.elements.Add(new Plane(new Point(0, -1, 0), new Point(0.001, -0.1, 0)));
+            //            this.elements.Add(new Sphere(new Point(0, 0, 0),3));
+            //            this.elements.Add(new Sphere(new Point(-2.5, 0, 2), 3));
+            //            this.elements.Add(new Sphere(new Point(1.5, 1, 1.5), 2));
+
+            TracableElement earthCapsule = new Capsule(new Point(4, 2, -2), new Point(4.5, 0.5, -2.1), 1);
+
             PerlinNoiseTexture perlin = new PerlinNoiseTexture(
                             new SolidTexture(Color.DarkBlue),
                             new SolidTexture(Color.White)
@@ -66,19 +67,38 @@ namespace Tracer
             perlin.add(0.7, new SolidTexture(Color.DarkGray));
             perlin.add(0.8, new SolidTexture(Color.White));
 
-            this.elements[1].Texture =
+            earthCapsule.Texture =
                 new TranslatedTexture(
                 new ScaledTexture(
                     perlin,
                 1.5, 1.5, 1.5),
                 0.0, 0.0, 2.0);
 
-            for (int i = 0; i < 25; i++)
+            this.elements.Add(earthCapsule);
+
+            for (int i = 0; i < 5; i++)
             {
                 Sphere s = new Sphere(new Point(RNG.NextDouble()*10-5, RNG.NextDouble()*5-2, RNG.NextDouble()*10-5), RNG.NextDouble()*0.2+0.2);
                 s.Texture = new SolidTexture(Color.FromArgb(RNG.Next(256), RNG.Next(256), RNG.Next(256)));
                 this.elements.Add(s);
             }
+
+            TracableElement mb = new Mandelbulb(new Point(0, 0, 0), 8, 3);
+            mb.Texture = SolidTexture.RED;
+            //mb.Texture =
+            //    new XYZRotatedTexture(
+            //        new GradientTexture(
+            //            new SolidTexture(Color.DarkRed), 
+            //            SolidTexture.RED, 
+            //            GradientTexture.Mode.SINE, 
+            //            true, 
+            //            0.079381
+            //        ), 
+            //        90, 36, 127
+            //    );
+            this.elements.Add(mb);
+
+
         }
 
         private void RTCamera_Paint(object sender, PaintEventArgs e)
@@ -135,8 +155,9 @@ namespace Tracer
                 this.pg.DrawLine(p, 0, 0, this.width, this.height);
                 this.pg.DrawLine(p, 0, this.height, this.width, 0);
             }
-            for (int i = 32; i > 0; i /= 2)
+            for (int i = 32; i > 0; i = (i >> 1))
             {
+                int mod = i * 2;
                 Console.WriteLine("Render scale " + i);
                 this.rendering = true;
                 for (int y = 0; y < this.height; y += i)
@@ -147,9 +168,12 @@ namespace Tracer
                         {
                             return;
                         }
-                        p.Color = marchPixel(x, y);
-                        this.pg.FillRectangle(p.Brush, x, y, i, i);
-//                        Console.Write(".");
+                        if (mod==32 || x%mod!=0 || y%mod!=0)
+                        {
+                            p.Color = marchPixel(x, y);
+                            this.pg.FillRectangle(p.Brush, x, y, i, i);
+                        }
+                        //                        Console.Write(".");
                     }
 //                    Console.WriteLine();
                     this.Invalidate();
@@ -265,12 +289,14 @@ namespace Tracer
         private double smoothMin(double k = 1.0, params double[] mins)
         {
             k = GradientTexture.clamp(0, k, 1);
+            double invk = 1 / k;
+            double inv6 = 1 / 6.0;
             double result = mins[0];
             for (int i = 1; i < mins.Length; i++)
             {
                 double minB = mins[i];
-                double h = Math.Max(k-Math.Abs(result-minB), 0)/k;
-                result = Math.Min(result, minB) - h * h * h * k / 6.0;
+                double h = Math.Max(k-Math.Abs(result-minB), 0)*invk;
+                result = Math.Min(result, minB) - h * h * h * k * inv6;
             }
             return result;
         }
@@ -331,6 +357,7 @@ namespace Tracer
                     result.element = element;
                 }
             }
+            //result.distance = Math.Sqrt(result.distance);
             return result;
         }
 

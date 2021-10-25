@@ -1,0 +1,10 @@
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\bin\Debug\UIDLists2.exe.config
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\bin\Debug\UIDLists2.exe
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\bin\Debug\UIDLists2.pdb
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\obj\Debug\UIDLists2.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\obj\Debug\UIDLists2.Form1.resources
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\obj\Debug\UIDLists2.Properties.Resources.resources
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\obj\Debug\UIDLists2.csproj.GenerateResource.cache
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\obj\Debug\UIDLists2.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\obj\Debug\UIDLists2.exe
+C:\Users\nucle\source\repos\UIDLists2\UIDLists2\obj\Debug\UIDLists2.pdb

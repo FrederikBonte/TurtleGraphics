@@ -70,5 +70,10 @@ namespace Tracer
         {
             return Point.distance(this.center, point) - this.radius;
         }
+
+        public override double distanceSquared(Point point)
+        {
+            return Point.distanceSquared(this.center, point) - this.radius;
+        }
     }
 }

@@ -1,0 +1,10 @@
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\bin\Debug\UIDLijstjes3.exe.config
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\bin\Debug\UIDLijstjes3.exe
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\bin\Debug\UIDLijstjes3.pdb
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\obj\Debug\UIDLijstjes3.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\obj\Debug\UIDLijstjes3.Form1.resources
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\obj\Debug\UIDLijstjes3.Properties.Resources.resources
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\obj\Debug\UIDLijstjes3.csproj.GenerateResource.cache
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\obj\Debug\UIDLijstjes3.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\obj\Debug\UIDLijstjes3.exe
+C:\Users\nucle\source\repos\UIDLijstjes3\UIDLijstjes3\obj\Debug\UIDLijstjes3.pdb

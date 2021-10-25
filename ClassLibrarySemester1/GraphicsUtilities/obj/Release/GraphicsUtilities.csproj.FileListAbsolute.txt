@@ -1,0 +1,13 @@
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\GraphicsUtilities.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\GraphicsUtilities.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\ROCvanTwente.Sumpel.Semester1.TurtleDrawing.TurtlePainter.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.GenerateResource.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Properties.Resource.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\ClassLibrarySemester1.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\ClassLibrarySemester1.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.AssemblyReference.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\ROCvanTwente.Sumpel.Semester2.Noise.NoiseMap.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.CopyComplete

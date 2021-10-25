@@ -26,3 +26,4 @@ C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\PriemGetallen\PriemGetallen\o
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\PriemGetallen\PriemGetallen\obj\Debug\PriemGetallen.csproj.GenerateResource.cache
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\PriemGetallen\PriemGetallen\obj\Debug\PriemGetallen.exe
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\PriemGetallen\PriemGetallen\obj\Debug\PriemGetallen.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\PriemGetallen\PriemGetallen\obj\Debug\PriemGetallen.csproj.CoreCompileInputs.cache

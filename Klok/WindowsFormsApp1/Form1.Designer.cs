@@ -58,10 +58,10 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.numPomodoro = new System.Windows.Forms.NumericUpDown();
             this.btnPomodoro = new System.Windows.Forms.Button();
+            this.clockControl1 = new ROC.FBE02.ClockDemo.ClockControl();
             this.pnlClock = new System.Windows.Forms.Panel();
             this.dlgColors = new System.Windows.Forms.ColorDialog();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.clockControl1 = new ROC.FBE02.ClockDemo.ClockControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -419,6 +419,16 @@
             this.btnPomodoro.UseVisualStyleBackColor = true;
             this.btnPomodoro.Click += new System.EventHandler(this.btnPomodoro_Click);
             // 
+            // clockControl1
+            // 
+            this.clockControl1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.clockControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clockControl1.Location = new System.Drawing.Point(3, 67);
+            this.clockControl1.MinuteTicks = false;
+            this.clockControl1.Name = "clockControl1";
+            this.clockControl1.Size = new System.Drawing.Size(189, 151);
+            this.clockControl1.TabIndex = 2;
+            // 
             // pnlClock
             // 
             this.pnlClock.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -433,16 +443,6 @@
             this.timer.Enabled = true;
             this.timer.Interval = 10;
             this.timer.Tick += new System.EventHandler(this.updateClock);
-            // 
-            // clockControl1
-            // 
-            this.clockControl1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.clockControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clockControl1.Location = new System.Drawing.Point(3, 67);
-            this.clockControl1.MinuteTicks = true;
-            this.clockControl1.Name = "clockControl1";
-            this.clockControl1.Size = new System.Drawing.Size(189, 151);
-            this.clockControl1.TabIndex = 2;
             // 
             // Form1
             // 

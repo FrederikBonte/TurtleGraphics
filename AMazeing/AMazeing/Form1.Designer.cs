@@ -130,10 +130,11 @@
             // maze1
             // 
             this.maze1.AutoScroll = true;
+            this.maze1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.maze1.Generate = AMazeing.Maze.GenerateAlgorithm.KRUSKAL;
             this.maze1.Location = new System.Drawing.Point(0, 0);
             this.maze1.Name = "maze1";
-            this.maze1.Size = new System.Drawing.Size(1104, 736);
+            this.maze1.Size = new System.Drawing.Size(868, 473);
             this.maze1.SizeX = 34;
             this.maze1.SizeY = 15;
             this.maze1.TabIndex = 0;

@@ -26,7 +26,7 @@ namespace SQLEditor
 
         private Connection frmConnect;
         private SQLForm frmSQL;
-        private Settings frmSettings;
+//        private Settings frmSettings;
         private MySqlConnection connection;
         private readonly SpeechSynthesizer SS = new SpeechSynthesizer();
         private BlockingCollection<string> speech = new BlockingCollection<string>();
@@ -154,13 +154,13 @@ namespace SQLEditor
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (this.frmSettings == null)
-            {
-                this.frmSettings = new Settings();
-            }
-            frmSettings.MdiParent = this;
-            frmSettings.WindowState = FormWindowState.Maximized;
-            frmSettings.Visible = true;
+            //if (this.frmSettings == null)
+            //{
+            //    this.frmSettings = new Settings();
+            //}
+            //frmSettings.MdiParent = this;
+            //frmSettings.WindowState = FormWindowState.Maximized;
+            //frmSettings.Visible = true;
         }
     }
 }

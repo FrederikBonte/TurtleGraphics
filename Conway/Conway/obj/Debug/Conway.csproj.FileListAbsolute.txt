@@ -1,0 +1,11 @@
+C:\Users\nucle\source\repos\Conway\Conway\bin\Debug\Conway.exe.config
+C:\Users\nucle\source\repos\Conway\Conway\bin\Debug\Conway.exe
+C:\Users\nucle\source\repos\Conway\Conway\bin\Debug\Conway.pdb
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.csprojAssemblyReference.cache
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.ConwayRenderer.resources
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.Properties.Resources.resources
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.csproj.GenerateResource.cache
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.exe
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.pdb
+C:\Users\nucle\source\repos\Conway\Conway\obj\Debug\Conway.Form1.resources

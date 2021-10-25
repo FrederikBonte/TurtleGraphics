@@ -50,3 +50,5 @@ C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Deb
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.exe
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.pdb
 C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.ClockControl.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ROC.FBE02.ClockDemo.ClockControl.resources
+C:\Users\nucle\OneDrive - ROC van Twente\Solutions\Klok\WindowsFormsApp1\obj\Debug\ClockDemo.csproj.CoreCompileInputs.cache

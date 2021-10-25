@@ -92,7 +92,7 @@ namespace Tracer
                 );
         }
 
-        public static double distance(Point p1, Point p2)
+        public static double distanceSquared(Point p1, Point p2)
         {
             double result = 0;
             double d = p1.X - p2.X;
@@ -101,9 +101,12 @@ namespace Tracer
             result += d * d;
             d = p1.Z - p2.Z;
             result += d * d;
-            return Math.Sqrt(result);
+            return result;
+        }
 
-
+        public static double distance(Point p1, Point p2)
+        {
+            return Math.Sqrt(distanceSquared(p1,p2));
         }
 
         public static Point perpendicular(Point p1, Point p2)
@@ -113,6 +116,21 @@ namespace Tracer
                 p1.Z * p2.X - p1.X * p2.Z,
                 p1.X * p2.Y - p1.Y * p2.X
                 );
+        }
+
+        public static Point scale(Point p, double s)
+        {
+            return new Point(p.X / s, p.Y / s, p.Z / s);
+        }
+
+        public static Point scale(Point p, Point s)
+        {
+            return scale(p, s.X, s.Y, s.Z);
+        }
+
+        public static Point scale(Point p, double sx, double sy, double sz)
+        {
+            return new Point(p.X / sx, p.Y / sy, p.Z / sz);
         }
     }
 

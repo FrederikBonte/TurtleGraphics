@@ -1,0 +1,13 @@
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\bin\Release\TestLibreary.exe.config
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\bin\Release\TestLibreary.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\bin\Release\TestLibreary.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.csprojAssemblyReference.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.Properties.Resources.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.csproj.GenerateResource.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.exe
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\bin\Release\GraphicsUtilities.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\bin\Release\GraphicsUtilities.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.Form1.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\TestLibreary\obj\Release\TestLibreary.csproj.CopyComplete

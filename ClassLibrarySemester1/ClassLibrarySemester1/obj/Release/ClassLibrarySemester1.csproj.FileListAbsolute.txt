@@ -1,0 +1,13 @@
+C:\Users\nucle\source\repos\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.csproj.CoreCompileInputs.cache
+C:\Users\nucle\source\repos\ClassLibrarySemester1\ClassLibrarySemester1\bin\Release\ClassLibrarySemester1.dll
+C:\Users\nucle\source\repos\ClassLibrarySemester1\ClassLibrarySemester1\bin\Release\ClassLibrarySemester1.pdb
+C:\Users\nucle\source\repos\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.dll
+C:\Users\nucle\source\repos\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\bin\Release\ClassLibrarySemester1.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\bin\Release\ClassLibrarySemester1.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.csproj.CoreCompileInputs.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.dll
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.pdb
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.csproj.AssemblyReference.cache
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ROCvanTwente.Sumpel.Semester2.Snowflakes.Blizzard.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Release\ClassLibrarySemester1.csproj.GenerateResource.cache

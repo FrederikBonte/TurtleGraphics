@@ -24,5 +24,7 @@ namespace Tracer
         public abstract double intersection(Line ray);
         public abstract Point getNormal(Point point);
         public abstract double distance(Point point);
+
+        public abstract double distanceSquared(Point point);
     }
 }

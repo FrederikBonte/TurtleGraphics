@@ -134,7 +134,7 @@ namespace Tracer
             {
                 case (Mode.LINEAR): { return phase; }
                 case (Mode.BLOCK): { return (phase < 0.5) ? 0 : 1; }
-                case (Mode.SINE): { return (Math.Cos(phase * Math.PI) + 1) / 2; }
+                case (Mode.SINE): { return (Math.Cos(phase * Math.PI) + 1) * 0.5; }
                 default: { return 0; }
             }
         }

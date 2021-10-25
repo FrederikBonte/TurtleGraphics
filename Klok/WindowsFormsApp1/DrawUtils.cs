@@ -57,7 +57,7 @@ namespace ROC.FBE02.ClockDemo
             }
             if (showNumbers)
             {
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < numbers.Length; i++)
                 {
                     drawNumber(g, p, size, cx, cy, i, numbers[i]);
                 }
