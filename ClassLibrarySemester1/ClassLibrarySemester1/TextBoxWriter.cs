@@ -16,7 +16,6 @@ namespace ROCvanTwente.Sumpel.Semester1
             this.txtOutput = txtOutput;
         }
 
-
         #region WriteLine functions for txtOutput
         public void Clear()
         {
