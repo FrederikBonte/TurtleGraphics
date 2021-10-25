@@ -42,3 +42,4 @@ C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SQLEditor\SQLEditor\bin\Debug
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SQLEditor\SQLEditor\bin\Debug\Google.Protobuf.xml
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SQLEditor\SQLEditor\bin\Debug\MySql.Data.xml
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SQLEditor\SQLEditor\obj\Debug\SQLEditor.csproj.CopyComplete
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\SQLEditor\SQLEditor\obj\Debug\SQLEditor.csproj.AssemblyReference.cache

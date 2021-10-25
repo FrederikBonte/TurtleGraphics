@@ -25,15 +25,21 @@ namespace SQLEditor
 
         private void btnExecute_Click(object sender, EventArgs e)
         {            
+            // Connect to the database and start a command.
             MySqlCommand command = getMain().Connection.CreateCommand();
+            // Copy the users sql query.
             command.CommandText = this.txtSQL.Text;
             MySqlDataReader reader;
+            // Open the connection to the database...
             getMain().Connection.Open();
             try
             {
-                reader = command.ExecuteReader();
+                // Clear all current content.
                 this.dataView.Rows.Clear();
                 this.dataView.Columns.Clear();
+                // Try to execute the query...
+                reader = command.ExecuteReader();
+
                 for (int i = 0; i < reader.FieldCount; i++)
                 {
                     this.dataView.Columns.Add("column" + (i + 1), reader.GetName(i));
@@ -46,6 +52,7 @@ namespace SQLEditor
                     row.SetValues(values);
                     this.dataView.Rows.Add(values);
                 }
+                // Probably important... :)
                 this.dataView.Focus();
             } catch (Exception ex)
             {
