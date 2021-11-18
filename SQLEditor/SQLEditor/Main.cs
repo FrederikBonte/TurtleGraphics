@@ -132,7 +132,11 @@ namespace SQLEditor
         {
             string myConnectionString = "SERVER=" + host + ";UID='" + username + "';PASSWORD='" + passwd + "';PORT=" + port + ";DATABASE="+database;
             this.connection = new MySqlConnection(myConnectionString);
-            speak("Connection to "+database+" succeeded", "Connected to "+database, "Connected");
+            speak(
+                "Connection to "+database+" succeeded", 
+                "Connected to "+database, 
+                "Connected"
+            );
 
             frmSQL = new SQLForm();
             frmSQL.MdiParent = this;

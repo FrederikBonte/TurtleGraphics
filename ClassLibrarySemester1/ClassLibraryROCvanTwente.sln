@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicsUtilities", "Graphi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary", "TestLibreary\TestLibrary.csproj", "{ADDE0452-6DC7-4999-8A25-6E647A9B01FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLinkedList", "TestLinkedList\TestLinkedList.csproj", "{FD788C51-9215-45E2-9BD8-E77504A3DFB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ADDE0452-6DC7-4999-8A25-6E647A9B01FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADDE0452-6DC7-4999-8A25-6E647A9B01FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADDE0452-6DC7-4999-8A25-6E647A9B01FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD788C51-9215-45E2-9BD8-E77504A3DFB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD788C51-9215-45E2-9BD8-E77504A3DFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD788C51-9215-45E2-9BD8-E77504A3DFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD788C51-9215-45E2-9BD8-E77504A3DFB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

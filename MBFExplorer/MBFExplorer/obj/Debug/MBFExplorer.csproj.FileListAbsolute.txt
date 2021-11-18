@@ -8,3 +8,11 @@ C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.csproj
 C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.exe
 C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.pdb
 C:\Users\Bonte\source\repos\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.Form1.resources
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.csproj.AssemblyReference.cache
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.Form1.resources
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.MandelbrotPainter.resources
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.Properties.Resources.resources
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.csproj.GenerateResource.cache
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.csproj.CoreCompileInputs.cache
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.exe
+D:\OneDrive - ROC van Twente\Solutions\MBFExplorer\MBFExplorer\obj\Debug\MBFExplorer.pdb
