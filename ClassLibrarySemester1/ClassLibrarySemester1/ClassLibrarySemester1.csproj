@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExplorerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExplorerForm.Designer.cs">
+      <DependentUpon>ExplorerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fractions\Complex.cs" />
     <Compile Include="Fractions\Fraction.cs" />
     <Compile Include="Fractions\Polynomial.cs" />

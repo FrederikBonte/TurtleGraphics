@@ -42,6 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fractals\HSVColor.cs" />
+    <Compile Include="Fractals\HSVGradient.cs" />
+    <Compile Include="Fractals\HSVMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fractals\HSVMap.Designer.cs">
+      <DependentUpon>HSVMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fractals\MandelbrotPainter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fractals\MandelbrotPainter.designer.cs">
+      <DependentUpon>MandelbrotPainter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fractals\MandelbrotRenderer.cs" />
     <Compile Include="Noise\NoiseMap.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -65,6 +80,12 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Fractals\HSVMap.resx">
+      <DependentUpon>HSVMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fractals\MandelbrotPainter.resx">
+      <DependentUpon>MandelbrotPainter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Noise\NoiseMap.resx">
       <DependentUpon>NoiseMap.cs</DependentUpon>
     </EmbeddedResource>

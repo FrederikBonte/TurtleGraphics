@@ -20,3 +20,11 @@ C:\Users\nucle\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLi
 C:\Users\nucle\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.dll
 C:\Users\nucle\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.pdb
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.csproj.AssemblyReference.cache
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\bin\Debug\ClassLibrarySemester1.dll
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\bin\Debug\ClassLibrarySemester1.pdb
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.csproj.AssemblyReference.cache
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ROCvanTwente.Sumpel.Semester2.Snowflakes.Blizzard.resources
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.csproj.GenerateResource.cache
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.csproj.CoreCompileInputs.cache
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.dll
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\ClassLibrarySemester1\obj\Debug\ClassLibrarySemester1.pdb

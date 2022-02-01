@@ -47,7 +47,6 @@ namespace ROCvanTwente.Sumpel.Utils
                 {
                     result += pvalue;
                 }
-                power *= power;
                 remainder >>= 2;
             }
             return result;

@@ -37,9 +37,13 @@ namespace TestLibrary
             this.txtProgram = new System.Windows.Forms.TextBox();
             this.btnParse = new System.Windows.Forms.Button();
             this.btnSquare = new System.Windows.Forms.Button();
-            this.tp = new ROCvanTwente.Sumpel.Semester1.TurtleDrawing.TurtlePainter();
+            this.btnLarge = new System.Windows.Forms.Button();
             this.blizzard1 = new ROCvanTwente.Sumpel.Semester2.Snowflakes.Blizzard();
             this.noiseMap1 = new ROCvanTwente.Sumpel.Semester2.Noise.NoiseMap();
+            this.hsvMap1 = new GraphicsUtilities.Fractals.HSVMap();
+            this.mandelbrotPainter1 = new GraphicsUtilities.Fractals.MandelbrotPainter();
+            this.btnSpirals = new System.Windows.Forms.Button();
+            this.tp = new ROCvanTwente.Sumpel.Semester1.TurtleDrawing.TurtlePainter();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,13 +66,17 @@ namespace TestLibrary
             this.flowLayoutPanel1.Controls.Add(this.txtProgram);
             this.flowLayoutPanel1.Controls.Add(this.btnParse);
             this.flowLayoutPanel1.Controls.Add(this.btnSquare);
+            this.flowLayoutPanel1.Controls.Add(this.btnLarge);
             this.flowLayoutPanel1.Controls.Add(this.blizzard1);
             this.flowLayoutPanel1.Controls.Add(this.noiseMap1);
+            this.flowLayoutPanel1.Controls.Add(this.hsvMap1);
+            this.flowLayoutPanel1.Controls.Add(this.mandelbrotPainter1);
+            this.flowLayoutPanel1.Controls.Add(this.btnSpirals);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(272, 698);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(184, 572);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // btnDrunkTurtle
@@ -106,8 +114,10 @@ namespace TestLibrary
             this.txtProgram.Location = new System.Drawing.Point(3, 119);
             this.txtProgram.Multiline = true;
             this.txtProgram.Name = "txtProgram";
-            this.txtProgram.Size = new System.Drawing.Size(121, 236);
+            this.txtProgram.Size = new System.Drawing.Size(175, 236);
             this.txtProgram.TabIndex = 5;
+            this.txtProgram.Text = "SET degrees = 0\r\nSET delta = 1.00011\r\nSET DELAY 0\r\nREPEAT 10000 {\r\n  FORWARD 0.2\r" +
+    "\n  RIGHT degrees\r\n  INCR degrees delta\r\n}";
             // 
             // btnParse
             // 
@@ -129,34 +139,69 @@ namespace TestLibrary
             this.btnSquare.UseVisualStyleBackColor = true;
             this.btnSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
-            // tp
+            // btnLarge
             // 
-            this.tp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tp.Location = new System.Drawing.Point(272, 0);
-            this.tp.Name = "tp";
-            this.tp.Size = new System.Drawing.Size(797, 698);
-            this.tp.TabIndex = 0;
+            this.btnLarge.Location = new System.Drawing.Point(3, 430);
+            this.btnLarge.Name = "btnLarge";
+            this.btnLarge.Size = new System.Drawing.Size(75, 23);
+            this.btnLarge.TabIndex = 11;
+            this.btnLarge.Text = "Groter tonen";
+            this.btnLarge.UseVisualStyleBackColor = true;
+            this.btnLarge.Click += new System.EventHandler(this.btnLarge_Click);
             // 
             // blizzard1
             // 
             this.blizzard1.BackColor = System.Drawing.Color.Black;
-            this.blizzard1.Location = new System.Drawing.Point(3, 430);
+            this.blizzard1.Location = new System.Drawing.Point(184, 3);
             this.blizzard1.Name = "blizzard1";
             this.blizzard1.Size = new System.Drawing.Size(263, 152);
             this.blizzard1.TabIndex = 7;
             // 
             // noiseMap1
             // 
-            this.noiseMap1.Location = new System.Drawing.Point(3, 588);
+            this.noiseMap1.Location = new System.Drawing.Point(184, 161);
             this.noiseMap1.Name = "noiseMap1";
             this.noiseMap1.Size = new System.Drawing.Size(263, 94);
             this.noiseMap1.TabIndex = 8;
+            // 
+            // hsvMap1
+            // 
+            this.hsvMap1.Location = new System.Drawing.Point(184, 261);
+            this.hsvMap1.Name = "hsvMap1";
+            this.hsvMap1.Size = new System.Drawing.Size(142, 123);
+            this.hsvMap1.TabIndex = 9;
+            // 
+            // mandelbrotPainter1
+            // 
+            this.mandelbrotPainter1.Location = new System.Drawing.Point(184, 390);
+            this.mandelbrotPainter1.MinimumSize = new System.Drawing.Size(160, 90);
+            this.mandelbrotPainter1.Name = "mandelbrotPainter1";
+            this.mandelbrotPainter1.Size = new System.Drawing.Size(160, 108);
+            this.mandelbrotPainter1.TabIndex = 10;
+            // 
+            // btnSpirals
+            // 
+            this.btnSpirals.Location = new System.Drawing.Point(184, 504);
+            this.btnSpirals.Name = "btnSpirals";
+            this.btnSpirals.Size = new System.Drawing.Size(75, 23);
+            this.btnSpirals.TabIndex = 12;
+            this.btnSpirals.Text = "Spirals";
+            this.btnSpirals.UseVisualStyleBackColor = true;
+            this.btnSpirals.Click += new System.EventHandler(this.btnSpirals_Click);
+            // 
+            // tp
+            // 
+            this.tp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tp.Location = new System.Drawing.Point(184, 0);
+            this.tp.Name = "tp";
+            this.tp.Size = new System.Drawing.Size(1136, 572);
+            this.tp.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 698);
+            this.ClientSize = new System.Drawing.Size(1320, 572);
             this.Controls.Add(this.tp);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form1";
@@ -180,6 +225,10 @@ namespace TestLibrary
         private System.Windows.Forms.Button btnSquare;
         private ROCvanTwente.Sumpel.Semester2.Snowflakes.Blizzard blizzard1;
         private ROCvanTwente.Sumpel.Semester2.Noise.NoiseMap noiseMap1;
+        private GraphicsUtilities.Fractals.HSVMap hsvMap1;
+        private GraphicsUtilities.Fractals.MandelbrotPainter mandelbrotPainter1;
+        private System.Windows.Forms.Button btnLarge;
+        private System.Windows.Forms.Button btnSpirals;
     }
 }
 

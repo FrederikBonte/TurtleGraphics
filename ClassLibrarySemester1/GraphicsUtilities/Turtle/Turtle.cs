@@ -26,6 +26,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         private float angle = 0;
         private float dx, dy;
+        private readonly Dictionary<string, float> variables = new Dictionary<string, float>();
         private readonly Queue<TurtleAction> actions;
         private readonly Stack<Repeat> repeats;
         private bool loop = false, stop = false, penUpDown = true;
@@ -104,7 +105,27 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public void rotate(float angle)
         {
-            this.add(new Rotate(this, angle));
+            this.rotate(new TurtleConstant(angle));
+        }
+
+        public void rotate(string variable)
+        {
+            this.rotate(new TurtleVariable(this, variable));
+        }
+
+        internal void rotate(TurtleExpression expression)
+        {
+            this.add(new Rotate(this, expression));
+        }
+
+        internal void right(TurtleExpression expression)
+        {
+            this.rotate(expression);
+        }
+
+        internal void left(TurtleExpression expression)
+        {
+            this.rotate(new NegativeExpression(this, expression));
         }
 
         public void right(float angle)
@@ -112,29 +133,99 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             this.rotate(angle);
         }
 
+        public void right(string variable)
+        {
+            this.rotate(variable);
+        }
+
         public void left(float angle)
         {
             this.rotate(-angle);
         }
 
+        public void left(string variable)
+        {
+            this.rotate(new NegativeExpression(this, new TurtleVariable(this, variable)));
+        }
+
+        internal void setAngle(TurtleExpression expression)
+        {
+            this.add(new SetAngle(this, expression));
+        }
+
         public void setAngle(float angle)
         {
-            this.add(new SetAngle(this, angle));
+            this.setAngle(new TurtleConstant(angle));
+        }
+
+        public void setAngle(string variable)
+        {
+            this.setAngle(new TurtleVariable(this, variable));
+        }
+
+        internal void forward(TurtleExpression expression)
+        {
+            this.add(new Forward(this, expression));
         }
 
         public void forward(float distance)
         {
-            this.add(new Forward(this, distance));
+            this.forward(new TurtleConstant(distance));
+        }
+
+        public void forward(string variable)
+        {
+            this.forward(new TurtleVariable(this, variable));
+        }
+
+        internal void back(TurtleExpression expression)
+        {
+            this.forward(new NegativeExpression(this, expression));
         }
 
         public void back(float distance)
         {
-            this.add(new Forward(this, -distance));
+            this.forward(new TurtleConstant(-distance));
+        }
+
+        public void back(string variable)
+        {
+            this.forward(new NegativeExpression(this, new TurtleVariable(this, variable)));
+        }
+
+        internal void increase(string variable, TurtleExpression expression)
+        {
+            this.add(new IncreaseVariable(this, variable, expression));
+        }
+
+        public void increase(string variable, float value)
+        {
+            this.increase(variable, new TurtleConstant(value));
+        }
+
+        public void increase(string variable, string incVariable)
+        {
+            this.increase(variable, new TurtleVariable(this, incVariable));
+        }
+
+        internal void decrease(string variable, TurtleExpression expression)
+        {
+            this.add(new DecreaseVariable(this, variable, expression));
+        }
+
+        public void decrease(string variable, float value)
+        {
+            this.decrease(variable, new TurtleConstant(value));
+        }
+
+        public void decrease(string variable, string incVariable)
+        {
+            this.decrease(variable, new TurtleVariable(this, incVariable));
         }
 
         public void moveTo(float tx, float ty)
         {
-            this.add(new MoveTo(this, tx, ty));
+            this.add(new MoveTo(this, new TurtleConstant(tx), new TurtleConstant(ty)));
         }
 
         public void penUp()
@@ -155,6 +246,21 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
         public void setThickness(float thickness)
         {
             this.add(new SetThickness(this, thickness));
+        }
+
+        internal void setVariable(string variable, TurtleExpression expression)
+        {
+            this.add(new SetVariable(this, variable, expression));
+        }
+
+        public void setVariable(string variable, float value = 0)
+        {
+            this.setVariable(variable, new TurtleConstant(value));
+        }
+
+        public void setVariable(string variable, string otherVariable)
+        {
+            this.setVariable(variable, new TurtleVariable(this, otherVariable));
         }
 
         public void run(bool loop = false)
@@ -178,6 +284,23 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
         public void halt()
         {
             this.stop = true;
+        }
+
+        public float getVariable(string name)
+        {
+            if (this.variables.ContainsKey(name))
+            {
+                return this.variables[name];
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        internal void updateVariable(string name, float value)
+        {
+            this.variables[name] = value;
         }
 
         internal void asyncRun()
@@ -338,6 +461,63 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             this.thickness = thickness;
         }
 
+        internal abstract class TurtleExpression
+        {
+            protected readonly Turtle turtle;
+            public TurtleExpression(Turtle turtle)
+            {
+                this.turtle = turtle;
+            }
+
+            public abstract float getValue();
+        }
+
+        internal class TurtleConstant:TurtleExpression
+        {
+            private readonly float value;
+
+            public TurtleConstant(float value) : base(null)
+            {
+                this.value = value;
+            }
+
+            public override float getValue()
+            {
+                return value;
+            }
+        }
+
+        internal class NegativeExpression : TurtleExpression
+        {
+            private readonly TurtleExpression expression;
+
+            public NegativeExpression(Turtle turtle, TurtleExpression expression) : base(turtle)
+            {
+                this.expression = expression;
+            }
+
+            public override float getValue()
+            {
+                return -expression.getValue();
+            }
+        }
+
+        internal class TurtleVariable : TurtleExpression
+        {
+            private readonly string name;
+
+            public TurtleVariable(Turtle turtle, string name, float value = 0) : base(turtle)
+            {
+                this.name = name;
+                this.turtle.updateVariable(name, value);
+            }
+
+            public override float getValue()
+            {
+                return turtle.getVariable(name);
+            }
+        }
+
         internal abstract class TurtleAction
         {
             protected readonly Turtle turtle;
@@ -387,24 +567,24 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         internal class Forward : TurtleAction
         {
-            private readonly float distance;
+            private readonly TurtleExpression distance;
 
-            public Forward(Turtle turtle, float distance) : base(turtle)
+            public Forward(Turtle turtle, TurtleExpression distance) : base(turtle)
             {
                 this.distance = distance;
             }
 
             public override void run()
             {
-                turtle.asyncMoveForward(distance);
+                turtle.asyncMoveForward(distance.getValue());
             }
         }
 
         internal class MoveTo : TurtleAction
         {
-            private readonly float tx, ty;
+            private readonly TurtleExpression tx, ty;
 
-            public MoveTo(Turtle turtle, float tx, float ty) : base(turtle)
+            public MoveTo(Turtle turtle, TurtleExpression tx, TurtleExpression ty) : base(turtle)
             {
                 this.tx = tx;
                 this.ty = ty;
@@ -412,37 +592,54 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
             public override void run()
             {
-                turtle.asyncMoveTo(tx,ty);
+                turtle.asyncMoveTo(tx.getValue(), ty.getValue());
             }
         }
 
         internal class Rotate : TurtleAction
         {
-            private readonly float angle;
+            private readonly TurtleExpression angle;
 
-            public Rotate(Turtle turtle, float angle) : base(turtle)
+            public Rotate(Turtle turtle, TurtleExpression angle) : base(turtle)
             {
                 this.angle = angle;
             }
 
             public override void run()
             {
-                turtle.asyncRotate(angle);
+                turtle.asyncRotate(angle.getValue());
             }
         }
 
         internal class SetAngle : TurtleAction
         {
-            private readonly float angle;
+            private readonly TurtleExpression angle;
 
-            public SetAngle(Turtle turtle, float angle) : base(turtle)
+            public SetAngle(Turtle turtle, TurtleExpression angle) : base(turtle)
             {
                 this.angle = angle;
             }
 
             public override void run()
             {
-                turtle.asyncSetAngle(angle);
+                turtle.asyncSetAngle(angle.getValue());
+            }
+        }
+
+        internal class SetVariable : TurtleAction
+        {
+            private readonly TurtleExpression expression;
+            private readonly string variable;
+
+            public SetVariable(Turtle turtle, string variable, TurtleExpression expression) : base(turtle)
+            {
+                this.variable = variable;
+                this.expression = expression;
+            }
+
+            public override void run()
+            {
+                turtle.updateVariable(variable, expression.getValue());
             }
         }
 
@@ -502,6 +699,53 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                     }
                 }
             }
+        }
+
+        internal class IncreaseVariable: TurtleAction
+        {
+            private readonly string variable;
+            private readonly TurtleExpression expression;
+
+            public IncreaseVariable(Turtle turtle, string variable, TurtleExpression expression) : base(turtle)
+            {
+                this.variable = variable;
+                this.expression = expression;
+            }
+
+            public override void run()
+            {
+                float value = turtle.getVariable(variable) + expression.getValue();
+                if (variable.ToLower().Contains("deg"))
+                {
+                    while (value>360)
+                    {
+                        value -= 360;
+                    }
+                    while (value<0)
+                    {
+                        value += 360;
+                    }
+                }
+                turtle.updateVariable(variable, value);
+            }
+
+        }
+        internal class DecreaseVariable : TurtleAction
+        {
+            private readonly string variable;
+            private readonly TurtleExpression expression;
+
+            public DecreaseVariable(Turtle turtle, string variable, TurtleExpression expression) : base(turtle)
+            {
+                this.variable = variable;
+                this.expression = expression;
+            }
+
+            public override void run()
+            {
+                turtle.updateVariable(variable, turtle.getVariable(variable) - expression.getValue());
+            }
+
         }
     }
 }

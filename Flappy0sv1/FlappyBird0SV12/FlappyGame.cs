@@ -59,9 +59,9 @@ namespace FlappyBird0SV12
             musicPlayer = new SoundPlayer(Properties.Resources.music);
             musicPlayer.PlayLooping();
 
-            FlappyDB database = new FlappyDB();
-            database.init();
-            database.readHighScore();
+//            FlappyDB database = new FlappyDB();
+//            database.init();
+//            database.readHighScore();
         }
 
         private void FlappyGame_Paint(object sender, PaintEventArgs e)

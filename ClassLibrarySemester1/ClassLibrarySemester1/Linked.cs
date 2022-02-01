@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ROCvanTwente.Sumpel.Semester1
 {
-    public class ListNode
+    public class ListNodeInt
     {
         private int data;
         // Singly linked list only knows the next.
-        private ListNode next;
+        private ListNodeInt next;
         // Doubly linked list also knows the previous.
         // private ListNode prev;
 
-        public ListNode(int data, ListNode next = null)
+        public ListNodeInt(int data, ListNodeInt next = null)
         {
             this.data = data;
             this.next = next;
@@ -25,12 +25,12 @@ namespace ROCvanTwente.Sumpel.Semester1
             return data;
         }
 
-        public ListNode getNext()
+        public ListNodeInt getNext()
         {
             return next;
         }
 
-        internal void setNext(ListNode next)
+        internal void setNext(ListNodeInt next)
         {
             this.next = next;
         }
@@ -42,7 +42,7 @@ namespace ROCvanTwente.Sumpel.Semester1
 
         public int getSize()
         {
-            if (next!=null)
+            if (next != null)
             {
                 return next.getSize() + 1;
             }
@@ -58,9 +58,9 @@ namespace ROCvanTwente.Sumpel.Semester1
             string result = "";
 
             // Loop through all elements of the node.
-            for (ListNode i = this; i != null; i = i.getNext())
+            for (ListNodeInt i = this; i != null; i = i.getNext())
             {
-                if (result.Length!=0)
+                if (result.Length != 0)
                 {
                     result += ", ";
                 }
@@ -73,32 +73,171 @@ namespace ROCvanTwente.Sumpel.Semester1
         }
     }
 
-    public class LinkedList
+    public class LinkedListInt
     {
-        private ListNode first = null;
-        private ListNode last = null;
+        private ListNodeInt first = null;
 
-        public LinkedList(params int[] numbers)
+        public LinkedListInt(params int[] numbers)
         {
-            first = createListNodes(numbers);
-            last = first;
-            if (last!=null)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                // Find the last node...
-                while (last.getNext()!=null)
-                {
-                    // Store the next node...
-                    last = last.getNext();
-                }
+                add(numbers[i]);
             }
         }
 
-        public ListNode getFirst()
+        public ListNodeInt getFirst()
         {
             return this.first;
         }
 
-        public ListNode getLast()
+        public ListNodeInt getLast()
+        {
+            ListNodeInt result = first;
+            // While this node still contains a next node...
+            while (result.getNext()!=null)
+            {
+                // Switch to the next node...
+                result = result.getNext();
+            }
+            // Return the node without a next node.
+            return result;
+        }
+
+        public int getSize()
+        {
+            return this.first.getSize();
+        }
+
+        public void add(int value)
+        {
+            append(value);
+        }
+
+        public bool isEmpty()
+        {
+            return (first == null);
+        }
+
+        /// <summary>
+        /// Adds a new listNode at the end of the list.
+        /// </summary>
+        /// <param name="value">The value to store in de last node.</param>
+        internal void append(int value)
+        {
+            ListNodeInt newNode = new ListNodeInt(value);
+            if (isEmpty())
+            {
+                first = newNode;
+            }
+            else
+            {
+                // Create a next node for the last element.
+                getLast().setNext(newNode);
+            }
+        }
+
+        /// <summary>
+        /// Adds a new node at the beginning of the list.
+        /// </summary>
+        /// <param name="value">The value to store in de first node.</param>
+        internal void prepend(int value)
+        {
+            first = new ListNodeInt(value, first);
+        }
+
+        public override string ToString()
+        {
+            return "[ " + first.ToString() + " ]";
+        }
+    }
+
+    public class ListNodeObj
+    {
+        private IComparable data;
+        private ListNodeObj next;
+        // Doubly linked list also knows the previous.
+        // private ListNode prev;
+
+        public ListNodeObj(IComparable data, ListNodeObj next = null)
+        {
+            this.data = data;
+            this.next = next;
+        }
+
+        public IComparable getData()
+        {
+            return data;
+        }
+
+        public ListNodeObj getNext()
+        {
+            return next;
+        }
+
+        internal void setNext(ListNodeObj next)
+        {
+            this.next = next;
+        }
+
+        internal void setData(IComparable data)
+        {
+            this.data = data;
+        }
+
+        public int getSize()
+        {
+            if (next != null)
+            {
+                return next.getSize() + 1;
+            }
+            else
+            {
+                return 1;
+            }
+        }
+
+        public override string ToString()
+        {
+            // Print this nodes data.
+            string result = "";
+
+            // Loop through all elements of the node.
+            for (ListNodeObj i = this; i != null; i = i.getNext())
+            {
+                if (result.Length != 0)
+                {
+                    result += ", ";
+                }
+                // Add the data of the curent node.
+                result += i.getData().ToString();
+            }
+
+            // Return the string representation of this list.
+            return result;
+        }
+    }
+
+    public class LinkedListObj
+    {
+        private ListNodeObj first = null;
+        private ListNodeObj last = null;
+
+        public LinkedListObj(params IComparable[] data)
+        {
+            for (int i = 0; i < data.Length; i++)
+            {
+//                Console.WriteLine(this);
+                add(data[i]);
+            }
+//            Console.WriteLine(this);
+        }
+
+        public ListNodeObj getFirst()
+        {
+            return this.first;
+        }
+
+        public ListNodeObj getLast()
         {
             return this.last;
         }
@@ -108,47 +247,99 @@ namespace ROCvanTwente.Sumpel.Semester1
             return this.first.getSize();
         }
 
+        public virtual void add(IComparable value)
+        {
+            append(value);
+        }
+
+        public bool isEmpty()
+        {
+            return (first == null);
+        }
+
         /// <summary>
         /// Adds a new listNode at the end of the list.
         /// </summary>
         /// <param name="value">The value to store in de last node.</param>
-        public void append(int value)
+        internal void append(IComparable value)
         {
-            // Create a next node for the last element.
-            getLast().setNext(new ListNode(value));
+            ListNodeObj newNode = new ListNodeObj(value);
+            if (isEmpty())
+            {
+                first = newNode;
+            }
+            else
+            {
+                // Create a next node for the last element.
+                getLast().setNext(newNode);
+            }
             // Store the new last node.
-            last = getLast().getNext();
+            last = newNode;
         }
 
         /// <summary>
         /// Adds a new node at the beginning of the list.
         /// </summary>
         /// <param name="value">The value to store in de first node.</param>
-        public void prepend(int value)
+        internal void prepend(IComparable value)
         {
-            first = new ListNode(value, first);
+            first = new ListNodeObj(value, first);
+            if (first.getNext()==null)
+            {
+                last = first;
+            }
         }
 
         public override string ToString()
         {
-            return "[ "+first.ToString()+" ]";
+            return "[ " + ((first==null)?"":first.ToString()) + " ]";
+        }
+    }
+
+    public class OrderedListObj : LinkedListObj
+    {
+        public OrderedListObj(params IComparable[] data) : base(data)
+        {
         }
 
-        private static ListNode createListNodes(params int[] numbers)
+        public override void add(IComparable value)
         {
-            ListNode first = null;
-
-            for (int i = numbers.Length-1; i >= 0; i--)
+            // If there is no data yet.
+            if (isEmpty())
             {
-                // Create a new first node.
-                // That points to the previous first node.
-                ListNode newNode = new ListNode(numbers[i], first);
-                // New node becomes the first node.
-                first = newNode;
+                // Simply use the prepend function.
+                // That always works for the first node.
+                prepend(value);
             }
-
-            // Return the first node of the list.
-            return first;
+            // IF the new data goes BEFORE all current data.
+            else if (value.CompareTo(getFirst().getData())<0)
+            {
+                // Add a new node at the beginning.
+                prepend(value);
+            }
+            // IF the new data goes AFTER all current data...
+            else if (value.CompareTo(getLast().getData())>=0)
+            {
+                // THEN add a new node at the end.
+                append(value);
+            }
+            else
+            {
+                // Look for the node that comes before the new one.
+                ListNodeObj current = getFirst();
+                while (current.getNext().getData().CompareTo(value) < 0)
+                {
+                    // Skip to the next node.
+                    current = current.getNext();
+                }
+                // Store the next node.
+                ListNodeObj after = current.getNext();
+                // Create a new node.
+                // It holds the new data and the node that comes after it.
+                ListNodeObj newNode = new ListNodeObj(value, after);
+                // Replace the next node of the current node...
+                current.setNext(newNode);
+            }
         }
     }
 }

@@ -85,3 +85,19 @@ Z:\repos\AMazeing\AMazeing\bin\Debug\AMazeing.dll.config
 Z:\repos\AMazeing\AMazeing\bin\Debug\AMazeing.dll
 Z:\repos\AMazeing\AMazeing\bin\Debug\AMazeing.pdb
 Z:\repos\AMazeing\AMazeing\obj\Debug\AMazeing.dll
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\bin\Debug\AMazeing.exe.config
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\bin\Debug\AMazeing.exe.manifest
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\bin\Debug\AMazeing.application
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\bin\Debug\AMazeing.exe
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\bin\Debug\AMazeing.pdb
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.csproj.AssemblyReference.cache
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.Form1.resources
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.Maze.resources
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.Properties.Resources.resources
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.Resource.resources
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.csproj.GenerateResource.cache
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.csproj.CoreCompileInputs.cache
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.exe.manifest
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.application
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.exe
+D:\OneDrive - ROC van Twente\Solutions\AMazeing\AMazeing\obj\Debug\AMazeing.pdb

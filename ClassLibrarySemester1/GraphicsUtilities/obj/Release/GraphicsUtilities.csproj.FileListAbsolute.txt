@@ -11,3 +11,17 @@ C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\Graphic
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.AssemblyReference.cache
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\ROCvanTwente.Sumpel.Semester2.Noise.NoiseMap.resources
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.CopyComplete
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\GraphicsUtilities.dll
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\GraphicsUtilities.pdb
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\ClassLibrarySemester1.dll
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\bin\Release\ClassLibrarySemester1.pdb
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.AssemblyReference.cache
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\ROCvanTwente.Sumpel.Semester2.Noise.NoiseMap.resources
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Properties.Resource.resources
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\ROCvanTwente.Sumpel.Semester1.TurtleDrawing.TurtlePainter.resources
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.GenerateResource.cache
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.csproj.CoreCompileInputs.cache
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.dll
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.pdb
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Fractals.HSVMap.resources
+D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Fractals.MandelbrotPainter.resources

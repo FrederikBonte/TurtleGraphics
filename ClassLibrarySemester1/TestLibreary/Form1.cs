@@ -101,6 +101,8 @@ namespace TestLibrary
         private void btnParse_Click(object sender, EventArgs e)
         {
             Turtle turtle = this.tp.getTurtle("programmed");
+            turtle.reset();
+            turtle.setThickness(0.2f);
             TurtleReader reader = new TurtleReader(turtle);
             reader.readFromText(txtProgram.Text);
             turtle.run();
@@ -123,6 +125,28 @@ namespace TestLibrary
             turtle.right(90);
             turtle.forward(50);
             turtle.right(80);
+            turtle.endRepeat();
+
+            turtle.run();
+        }
+
+        private void btnLarge_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSpirals_Click(object sender, EventArgs e)
+        {
+            Turtle turtle = this.tp.getTurtle("spirals");
+            turtle.setDelay(0);
+            turtle.setThickness(0.5f);
+            turtle.setColor(Color.BlueViolet);
+            turtle.setVariable("degrees", 0);
+
+            turtle.beginRepeat(10000000);
+            turtle.forward(0.37f);
+            turtle.right("degrees");
+            turtle.increase("degrees", 1.00011f);
             turtle.endRepeat();
 
             turtle.run();

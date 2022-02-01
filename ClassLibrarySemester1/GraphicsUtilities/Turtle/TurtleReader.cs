@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ROCvanTwente.Sumpel.Semester1.TurtleDrawing.Turtle;
 
 namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 {
@@ -19,6 +20,9 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
         public const string KEYWORD_PEN_DOWN = "PEN DOWN";
         public const string KEYWORD_RESET = "RESET";
         public const string KEYWORD_REPEAT = "REPEAT";
+        public const string KEYWORD_SET = "SET";
+        public const string KEYWORD_INCREASE = "INCR";
+        public const string KEYWORD_DECREASE = "DECR";
         public const char CLASSIC_OPEN_BRACKET = '[';
         public const char CLASSIC_CLOSE_BRACKET = ']';
         public const char ALTERNATIVE_OPEN_BRACKET = '{';
@@ -127,6 +131,18 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             {
                 parseDelay(line.Substring(KEYWORD_DELAY.Length));
             }
+            else if (line.StartsWith(KEYWORD_SET)) // "SET" MUST GO AFTER "SET DELAY"!!!
+            {
+                parseSet(line.Substring(KEYWORD_SET.Length));
+            }
+            else if (line.StartsWith(KEYWORD_INCREASE))
+            {
+                parseIncrease(line.Substring(KEYWORD_INCREASE.Length));
+            }
+            else if (line.StartsWith(KEYWORD_DECREASE))
+            {
+                parseDecrease(line.Substring(KEYWORD_DECREASE.Length));
+            }
             else if (line.StartsWith(KEYWORD_PEN_UP))
             {
                 parsePenUp(line.Substring(KEYWORD_PEN_UP.Length));
@@ -157,6 +173,34 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             }
         }
 
+        private void parseSet(string line)
+        {
+            if (!line.StartsWith(" "))
+            {
+                Console.WriteLine("Please type a space between SET and the variable name!");
+            }
+            line = line.Trim();
+            if (Char.IsLetter(line[0]) || line[0] == '_')
+            {
+                string variable = parseVariable(line, false);
+                line = line.Substring(variable.Length).Trim();
+                if (line[0]=='=')
+                {
+                    line = line.Substring(1).Trim();
+                    TurtleExpression expression = parseExpression(line);
+                    turtle.setVariable(variable, expression);
+                }
+                else
+                {
+                    turtle.setVariable(variable);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please supply a variable to SET!");
+            }
+        }
+
         private void parseDelay(string line)
         {
             if (!line.StartsWith(" "))
@@ -175,6 +219,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                 Console.WriteLine("Please type a space between REPEAT and the number!");
             }
             line = line.Trim();
+            // Parse a number of repetitions followed by a bracket.
             int number = parseInt(line, true);
             this.turtle.beginRepeat(number);
         }
@@ -186,8 +231,64 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                 Console.WriteLine("Please type a space between FORWARD and the distance!");
             }
             line = line.Trim();
-            float distance = parseFloat(line);
+            TurtleExpression distance = parseExpression(line);
             this.turtle.forward(distance);
+        }
+
+        private void parseIncrease(string line)
+        {
+            if (!line.StartsWith(" "))
+            {
+                Console.WriteLine("Please type a space between INCREASE and the distance!");
+            }
+            line = line.Trim();
+            if (Char.IsLetter(line[0]) || line[0] == '_')
+            {
+                string variable = parseVariable(line, false);
+                line = line.Substring(variable.Length);
+                if (line[0] == ' ')
+                {
+                    line = line.Substring(1).Trim();
+                    TurtleExpression expression = parseExpression(line);
+                    turtle.increase(variable, expression);
+                }
+                else
+                {
+                    Console.WriteLine("Please supply a space between the variable and the amount to INCREASE.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please supply a variable to INCREASE!");
+            }
+        }
+
+        private void parseDecrease(string line)
+        {
+            if (!line.StartsWith(" "))
+            {
+                Console.WriteLine("Please type a space between DECREASE and the distance!");
+            }
+            line = line.Trim();
+            if (Char.IsLetter(line[0]) || line[0] == '_')
+            {
+                string variable = parseVariable(line, false);
+                line = line.Substring(variable.Length);
+                if (line[0] == ' ')
+                {
+                    line = line.Substring(1).Trim();
+                    TurtleExpression expression = parseExpression(line);
+                    turtle.decrease(variable, expression);
+                }
+                else
+                {
+                    Console.WriteLine("Please supply a space between the variable and the amount to DECREASE.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please supply a variable to DECREASE!");
+            }
         }
 
         private void parseBack(string line)
@@ -197,7 +298,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                 Console.WriteLine("Please type a space between BACK and the distance!");
             }
             line = line.Trim();
-            float distance = parseFloat(line);
+            TurtleExpression distance = parseExpression(line);
             this.turtle.back(distance);
         }
 
@@ -208,7 +309,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                 Console.WriteLine("Please type a space between ROTATE and the angle!");
             }
             line = line.Trim();
-            float angle = parseFloat(line);
+            TurtleExpression angle = parseExpression(line);
             this.turtle.rotate(angle);
         }
 
@@ -219,8 +320,8 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                 Console.WriteLine("Please type a space between LEFT and the angle!");
             }
             line = line.Trim();
-            float angle = parseFloat(line);
-            this.turtle.rotate(-angle);
+            TurtleExpression angle = parseExpression(line);
+            this.turtle.left(angle);
         }
 
         private void parseRight(string line)
@@ -230,7 +331,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                 Console.WriteLine("Please type a space between RIGHT and the angle!");
             }
             line = line.Trim();
-            float angle = parseFloat(line);
+            TurtleExpression angle = parseExpression(line);
             this.turtle.rotate(angle);
         }
 
@@ -259,6 +360,36 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                 Console.WriteLine("There is some unexpected text after RESET: " + line);
             }
             turtle.reset();
+        }
+
+        private TurtleExpression parseExpression(string line)
+        {
+            if (line.Length==0)
+            {
+                return null;
+            }
+            if (Char.IsLetter(line[0]) || line[0] == '_')
+            {
+                return new TurtleVariable(turtle, parseVariable(line));
+            }
+            else
+            {
+                return new TurtleConstant(parseFloat(line));
+            }
+        }
+
+        private string parseVariable(string line, bool end = true)
+        {
+            int index = 1;
+            while (index<line.Length && (Char.IsLetter(line[index]) || Char.IsDigit(line[index])))
+            {
+                index++;
+            }
+            if (end && !isCommentOrEmpty(line.Substring(index)))
+            {
+                Console.WriteLine("There is some unexpected text after this variable: " + line);
+            }
+            return line.Substring(0, index);
         }
 
         private float parseFloat(string line)

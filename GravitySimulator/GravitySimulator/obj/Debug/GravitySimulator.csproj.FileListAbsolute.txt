@@ -30,3 +30,15 @@ C:\Users\nucle\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimul
 C:\Users\nucle\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.pdb
 C:\Users\nucle\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.LanderGraphics.resources
 C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.LanderGraphics.resources
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\bin\Debug\GravitySimulator.exe.config
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\bin\Debug\GravitySimulator.exe
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\bin\Debug\GravitySimulator.pdb
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.csproj.AssemblyReference.cache
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.Form1.resources
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.GravitySimulator.resources
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.LanderGraphics.resources
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.Properties.Resources.resources
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.csproj.GenerateResource.cache
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.csproj.CoreCompileInputs.cache
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.exe
+D:\OneDrive - ROC van Twente\Solutions\GravitySimulator\GravitySimulator\obj\Debug\GravitySimulator.pdb
