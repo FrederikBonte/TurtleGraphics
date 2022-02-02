@@ -69,6 +69,8 @@
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
     <Compile Include="Turtle\Turtle.cs" />
+    <Compile Include="Turtle\TurtleAction.cs" />
+    <Compile Include="Turtle\TurtleExpression.cs" />
     <Compile Include="Turtle\TurtlePainter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,6 +78,7 @@
       <DependentUpon>TurtlePainter.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Turtle\TurtleProgrammer.cs" />
     <Compile Include="Turtle\TurtleReader.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>

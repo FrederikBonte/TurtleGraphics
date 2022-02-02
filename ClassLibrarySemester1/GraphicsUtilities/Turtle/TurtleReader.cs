@@ -28,12 +28,16 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
         public const char ALTERNATIVE_OPEN_BRACKET = '{';
         public const char ALTERNATIVE_CLOSE_BRACKET = '}';
 
-        private Turtle turtle;
+        private TurtleProgrammer turtle;
         private StreamReader reader = null;
         private char open_br;
         private char close_br;
 
-        public TurtleReader(Turtle turtle)
+        public TurtleReader(Turtle turtle):this(new TurtleProgrammer(turtle))
+        {
+        }
+
+        public TurtleReader(TurtleProgrammer turtle)
         {
             this.turtle = turtle;
             this.setAlternativeBrackets();
@@ -370,7 +374,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             }
             if (Char.IsLetter(line[0]) || line[0] == '_')
             {
-                return new TurtleVariable(turtle, parseVariable(line));
+                return turtle.createVariable(parseVariable(line));
             }
             else
             {

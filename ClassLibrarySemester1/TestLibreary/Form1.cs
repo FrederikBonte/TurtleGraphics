@@ -25,46 +25,48 @@ namespace TestLibrary
         {
             Turtle turtle = this.tp.getTurtle();
             turtle.setDelay(1);
-            turtle.right(8);
+            TurtleProgrammer prg = new TurtleProgrammer(turtle);
 
-            turtle.beginRepeat(4);
-            turtle.forward(150);
-            turtle.left(4);
-            turtle.back(150);
-            turtle.right(8);
-            turtle.endRepeat();
-            turtle.right(21);
+            prg.right(8);
+            prg.beginRepeat(4);
+            prg.forward(150);
+            prg.left(4);
+            prg.back(150);
+            prg.right(8);
+            prg.endRepeat();
+            prg.right(21);
 
             turtle.run(true);
         }
 
-        private void drawKoch(Turtle turtle, float distance, int depth)
+        private void drawKoch(TurtleProgrammer prg, float distance, int depth)
         {
             if (depth==0)
             {
-                turtle.back(distance);
+                prg.back(distance);
             } else
             {
-                drawKoch(turtle, distance, depth - 1);
-                turtle.rotate(-60);
-                drawKoch(turtle, distance, depth - 1);
-                turtle.rotate(120);
-                drawKoch(turtle, distance, depth - 1);
-                turtle.rotate(-60);
-                drawKoch(turtle, distance, depth - 1);
+                drawKoch(prg, distance, depth - 1);
+                prg.rotate(-60);
+                drawKoch(prg, distance, depth - 1);
+                prg.rotate(120);
+                drawKoch(prg, distance, depth - 1);
+                prg.rotate(-60);
+                drawKoch(prg, distance, depth - 1);
             }
         }
 
         private void btnDrunkTurtle_Click(object sender, EventArgs e)
         {
             Turtle turtle2 = this.tp.getTurtle("drunk");
+            TurtleProgrammer prg = new TurtleProgrammer(turtle2);
             turtle2.setDelay(10);
 
             for (int i = 0; i < 127; i++)
             {
-                turtle2.forward(7.3f);
-                turtle2.setThickness(0.5f + i * 0.1f);
-                turtle2.rotate(((RNG.Next(1000) / 500.0f) - 0.7f) * 37);
+                prg.forward(7.3f);
+                prg.setThickness(0.5f + i * 0.1f);
+                prg.rotate(((RNG.Next(1000) / 500.0f) - 0.7f) * 37);
             }
 
             turtle2.run();
@@ -73,11 +75,13 @@ namespace TestLibrary
         private void btnFractal_Click(object sender, EventArgs e)
         {
             Turtle turtle = this.tp.getTurtle("koch");
-            turtle.setColor(Color.DarkGreen);
-            turtle.setThickness(0.5f);
-            turtle.rotate(120);
+            TurtleProgrammer prg = new TurtleProgrammer(turtle);
 
-            drawKoch(turtle, 3.7f, 4);
+            prg.setColor(Color.DarkGreen);
+            prg.setThickness(0.5f);
+            prg.rotate(120);
+
+            drawKoch(prg, 3.7f, 4);
             turtle.run(true);
             turtle.setDelay(1);
         }
@@ -85,25 +89,27 @@ namespace TestLibrary
         private void btnMoveRandom_Click(object sender, EventArgs e)
         {
             Turtle turtle = this.tp.getTurtle("random");
+            TurtleProgrammer prg = new TurtleProgrammer(turtle);
             turtle.setDelay(5);
-            turtle.setColor(Color.LightBlue);
-            turtle.setThickness(2f);
-            turtle.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
-            turtle.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
-            turtle.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
-            turtle.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
-            turtle.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
-            turtle.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
-            turtle.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
+            prg.setColor(Color.LightBlue);
+            prg.setThickness(2f);
+            prg.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
+            prg.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
+            prg.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
+            prg.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
+            prg.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
+            prg.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
+            prg.moveTo(RNG.Next(this.Width), RNG.Next(this.Height));
             turtle.run(true);
         }
 
         private void btnParse_Click(object sender, EventArgs e)
         {
             Turtle turtle = this.tp.getTurtle("programmed");
-            turtle.reset();
-            turtle.setThickness(0.2f);
-            TurtleReader reader = new TurtleReader(turtle);
+            TurtleProgrammer prg = new TurtleProgrammer(turtle);
+            turtle.clear();
+            prg.setThickness(0.2f);
+            TurtleReader reader = new TurtleReader(prg);
             reader.readFromText(txtProgram.Text);
             turtle.run();
         }
@@ -112,20 +118,21 @@ namespace TestLibrary
         {
             Turtle turtle = this.tp.getTurtle("vierkant");
             turtle.setDelay(5);
-            turtle.setColor(Color.Red);
+            TurtleProgrammer prg = new TurtleProgrammer(turtle);
 
-            turtle.beginRepeat(36);
-            turtle.forward(50);
-            turtle.right(30);
-            turtle.forward(50);
-            turtle.right(120);
-            turtle.forward(50);
-            turtle.right(30);
-            turtle.forward(50);
-            turtle.right(90);
-            turtle.forward(50);
-            turtle.right(80);
-            turtle.endRepeat();
+            prg.setColor(Color.Red);
+            prg.beginRepeat(36);
+            prg.forward(50);
+            prg.right(30);
+            prg.forward(50);
+            prg.right(120);
+            prg.forward(50);
+            prg.right(30);
+            prg.forward(50);
+            prg.right(90);
+            prg.forward(50);
+            prg.right(80);
+            prg.endRepeat();
 
             turtle.run();
         }
@@ -139,15 +146,16 @@ namespace TestLibrary
         {
             Turtle turtle = this.tp.getTurtle("spirals");
             turtle.setDelay(0);
-            turtle.setThickness(0.5f);
-            turtle.setColor(Color.BlueViolet);
-            turtle.setVariable("degrees", 0);
+            TurtleProgrammer prg = new TurtleProgrammer(turtle);
+            prg.setThickness(0.5f);
+            prg.setColor(Color.BlueViolet);
+            prg.setVariable("degrees", 0);
 
-            turtle.beginRepeat(10000000);
-            turtle.forward(0.37f);
-            turtle.right("degrees");
-            turtle.increase("degrees", 1.00011f);
-            turtle.endRepeat();
+            prg.beginRepeat(10000000);
+            prg.forward(0.37f);
+            prg.right("degrees");
+            prg.increase("degrees", 1.00011f);
+            prg.endRepeat();
 
             turtle.run();
         }
