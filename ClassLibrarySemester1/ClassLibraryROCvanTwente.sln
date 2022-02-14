@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary", "TestLibreary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLinkedList", "TestLinkedList\TestLinkedList.csproj", "{FD788C51-9215-45E2-9BD8-E77504A3DFB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogoProgramming", "LogoProgramming\LogoProgramming.csproj", "{1B12209F-E563-4A4D-BE77-608C84CA2292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FD788C51-9215-45E2-9BD8-E77504A3DFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD788C51-9215-45E2-9BD8-E77504A3DFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD788C51-9215-45E2-9BD8-E77504A3DFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B12209F-E563-4A4D-BE77-608C84CA2292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B12209F-E563-4A4D-BE77-608C84CA2292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B12209F-E563-4A4D-BE77-608C84CA2292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B12209F-E563-4A4D-BE77-608C84CA2292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

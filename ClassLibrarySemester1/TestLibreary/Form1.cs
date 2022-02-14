@@ -147,17 +147,15 @@ namespace TestLibrary
             Turtle turtle = this.tp.getTurtle("spirals");
             turtle.setDelay(0);
             TurtleProgrammer prg = new TurtleProgrammer(turtle);
-            prg.setThickness(0.5f);
-            prg.setColor(Color.BlueViolet);
-            prg.setVariable("degrees", 0);
+            turtle.setThickness(0.5f);
+            turtle.setColor(Color.BlueViolet);
+            turtle.setVariable("degrees", 0);
 
-            prg.beginRepeat(10000000);
             prg.forward(0.37f);
             prg.right("degrees");
             prg.increase("degrees", 1.00011f);
-            prg.endRepeat();
 
-            turtle.run();
+            turtle.run(true);
         }
     }
 }

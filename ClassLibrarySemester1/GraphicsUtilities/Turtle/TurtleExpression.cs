@@ -54,7 +54,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
         public TurtleVariable(Turtle turtle, string name, float value = 0) : base(turtle)
         {
             this.name = name;
-            this.turtle.updateVariable(name, value);
+            this.turtle.setVariable(name, value);
         }
 
         public override float getValue()

@@ -31,6 +31,12 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             }
         }
 
+        public void clear()
+        {
+            Graphics ig = Graphics.FromImage(image);
+            ig.Clear(Color.Wheat);
+        }
+
         private void timer_Tick(object sender, EventArgs e)
         {
             this.Invalidate();

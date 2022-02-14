@@ -71,14 +71,22 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
         {
             this.halt();
             this.actions.Clear();
-            asyncReset();
+            this.asyncReset();
         }
 
+        /// <summary>
+        /// Please program the turtle using a TurtleProgrammer.
+        /// </summary>
+        /// <param name="action"></param>
         internal void add(TurtleAction action)
         {
             this.actions.Enqueue(action);
         }
 
+        /// <summary>
+        /// Runs the turtle program in a dedicated thread.
+        /// </summary>
+        /// <param name="loop">Make the program loop</param>
         public void run(bool loop = false)
         {
             if (this.thread!=null)
@@ -109,12 +117,41 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             }
         }
 
-        internal void updateVariable(string name, float value)
+        public void setVariable(string name, float value)
         {
             this.variables[name] = value;
         }
 
-        #region These are the actual functions that make the turtle go.
+        public void moveTo(float target_x, float target_y)
+        {
+            lock (lck)
+            {
+                this.x = target_x;
+                this.y = target_y;
+            }
+        }
+
+        public void penUp()
+        {
+            this.penUpDown = false;
+        }
+
+        public void penDown()
+        {
+            this.penUpDown = true;
+        }
+
+        public void setColor(Color color)
+        {
+            this.color = color;
+        }
+
+        public void setThickness(float thickness)
+        {
+            this.thickness = thickness;
+        }
+
+        #region These are the actual functions that handle the turtle animation.
 
         internal void asyncRun()
         {
@@ -243,35 +280,6 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                     Thread.Sleep(delay);
                 }
             }
-        }
-
-        internal void asyncMoveTo(float target_x, float target_y)
-        {
-            lock(lck)
-            {
-                this.x = target_x;
-                this.y = target_y;
-            }
-        }
-
-        internal void asyncPenUp()
-        {
-            this.penUpDown = false;
-        }
-
-        internal void asyncPenDown()
-        {
-            this.penUpDown = true;
-        }
-
-        internal void asyncSetColor(Color color)
-        {
-            this.color = color;
-        }
-
-        internal void asyncSetThickness(float thickness)
-        {
-            this.thickness = thickness;
         }
         #endregion
     }

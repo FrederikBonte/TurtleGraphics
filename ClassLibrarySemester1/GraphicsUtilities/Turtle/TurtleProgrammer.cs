@@ -181,9 +181,19 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
             this.decrease(variable, createVariable(incVariable));
         }
 
+        internal void moveTo(TurtleExpression exp1, TurtleExpression exp2)
+        {
+            this.add(new MoveTo(turtle, exp1, exp2));
+        }
+
         public void moveTo(float tx, float ty)
         {
-            this.add(new MoveTo(turtle, new TurtleConstant(tx), new TurtleConstant(ty)));
+            this.moveTo(new TurtleConstant(tx), new TurtleConstant(ty));
+        }
+
+        public void moveTo(string variable1, string variable2)
+        {
+            this.moveTo(new TurtleVariable(turtle, variable1), new TurtleVariable(turtle, variable2));
         }
 
         public void penUp()

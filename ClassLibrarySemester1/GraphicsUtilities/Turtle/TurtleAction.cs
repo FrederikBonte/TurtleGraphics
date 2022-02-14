@@ -38,7 +38,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public override void run()
         {
-            turtle.asyncPenUp();
+            turtle.penUp();
         }
     }
 
@@ -50,7 +50,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public override void run()
         {
-            turtle.asyncPenDown();
+            turtle.penDown();
         }
     }
 
@@ -81,7 +81,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public override void run()
         {
-            turtle.asyncMoveTo(tx.getValue(), ty.getValue());
+            turtle.moveTo(tx.getValue(), ty.getValue());
         }
     }
 
@@ -128,7 +128,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public override void run()
         {
-            turtle.updateVariable(variable, expression.getValue());
+            turtle.setVariable(variable, expression.getValue());
         }
     }
 
@@ -143,7 +143,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public override void run()
         {
-            turtle.asyncSetColor(color);
+            turtle.setColor(color);
         }
     }
 
@@ -158,7 +158,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public override void run()
         {
-            turtle.asyncSetThickness(thickness);
+            turtle.setThickness(thickness);
         }
     }
 
@@ -204,7 +204,9 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
         public override void run()
         {
             float value = turtle.getVariable(variable) + expression.getValue();
-            if (variable.ToLower().Contains("deg"))
+            string name = variable.ToLower();
+            // Mumble mumble avoid very high angles.
+            if (name.Contains("deg") || name.Contains("angle"))
             {
                 while (value > 360)
                 {
@@ -215,7 +217,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
                     value += 360;
                 }
             }
-            turtle.updateVariable(variable, value);
+            turtle.setVariable(variable, value);
         }
 
     }
@@ -232,7 +234,7 @@ namespace ROCvanTwente.Sumpel.Semester1.TurtleDrawing
 
         public override void run()
         {
-            turtle.updateVariable(variable, turtle.getVariable(variable) - expression.getValue());
+            turtle.setVariable(variable, turtle.getVariable(variable) - expression.getValue());
         }
 
     }

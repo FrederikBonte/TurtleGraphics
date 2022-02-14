@@ -25,3 +25,5 @@ D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\o
 D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.pdb
 D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Fractals.HSVMap.resources
 D:\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Fractals.MandelbrotPainter.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Fractals.HSVMap.resources
+C:\Users\Bonte\OneDrive - ROC van Twente\Solutions\ClassLibrarySemester1\GraphicsUtilities\obj\Release\GraphicsUtilities.Fractals.MandelbrotPainter.resources
